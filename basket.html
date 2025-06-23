@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&family=Londrina+Sketch&display=swap" rel="stylesheet">
+
+    <!-- Slackey Static -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+
+    <!-- Ruslan Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ruslan+Display&family=Slackey&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/basket.css">
+
+
+</head>
+<body>
+    <div id="main">
+        <nav class="sticky">
+            <div><a href="index.html#home" class="danfo">SNEAKERS</a></div>
+            <div>
+                <ul>
+                    <li class="sec"><button onclick="showEnter()" id="enter-button" class="ruslan-display-regular" style="font-size: 30px; margin-top: 10px; background-color: transparent; border: none;">Войти</button></li>
+                    <li class="sec"><a href="index.html#catalog" id="third" class="ruslan-display-regular" style="font-size: 30px; margin-top: 10px;">Каталог</a></li>
+                    <li class="sec"><a href="index.html#reviews" id="second" class="ruslan-display-regular" style="font-size: 30px;">Отзывы</a></li>
+                    <li><a href="basket.html" id="fourth" class="ruslan-display-regular" style="font-size: 30px;">Корзина</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="block">
+            <div class="shopping-cart">
+                <div class="title">Shopping Bag</div>
+
+                <p>Здесь пока ничего нету</p>
+
+                
+            </div>
+            <div class="total-price" id="total-price">
+                <p class="total">Итого:</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/basket.js"></script>
+    <script src="./js/sneakers.js"></script>
+</body>
+</html>
+

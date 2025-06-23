@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+
+    <!-- danfo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&family=Londrina+Sketch&display=swap" rel="stylesheet">
+
+    <!-- Ruslan Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ruslan+Display&family=Slackey&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/katalog.css">
+    
+</head>
+<body>
+    <nav class="sticky">
+        <a href="index.html" class="danfo">SNEAKERS</a>
+    <div>
+    <ul>
+        <li class="sec"><button onclick="showEnter()" id="enter-button" class="ruslan-display-regular" style="font-size: 30px; margin-top: 10px; background-color: transparent; border: none;">Войти</button></li>
+        <li class="sec"><a href="index.html#catalog" id="third" class="ruslan-display-regular" style="font-size: 30px; margin-top: 10px;">Каталог</a></li>
+        <li class="sec"><a href="index.html#reviews" id="second" class="ruslan-display-regular" style="font-size: 30px;">Отзывы</a></li>
+        <li><a href="basket.html" id="fourth" class="ruslan-display-regular" style="font-size: 30px;">Корзина</a></li>
+    </ul>
+    </div>
+    </nav>
+<div id="grand">
+    <div class="filter">
+        <button onclick="sortByPriceAscending()" class="sort">Сортировать по возрастанию цены</button>
+        <button onclick="sortByPriceDescending()" class="sort">Сортировать по убыванию цены</button>
+    </div>
+
+        <div id="products-container">
+            
+
+
+            <div id="modal" class="modal hidden">
+                <div class="modal-content"> 
+                    <button class="close">&#x2715;</button>
+                    <h2 id="modal-title">Название товара</h2>
+                    <div class="single-item" id="owl"><img id="modal-image" src="" alt="Изображение товара"></div>
+                    <p><b id="modal-price">Цена: $0</b></p>
+                    <p id="modal-description">Описание товара...</p>    
+                    <button id="add-to-cart" data-cart onclick="addToCart(event)">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/sneakers.js"></script>
+    <script src="./js/project.js"></script>
+    <script src="./js/sort.js"></script>
+</body>
+</html>
